@@ -16,11 +16,6 @@
 	    <?php echo Asset::css('projects.min.css'); ?>
 	    <?php echo Asset::css('taggle.css'); ?>
 
-
-	    
-	<script>
-		$(function(){ $('.topbar').dropdown(); });
-	</script>
 </head>
 <body>
 

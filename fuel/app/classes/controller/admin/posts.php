@@ -64,7 +64,7 @@ class Controller_Admin_Posts extends Controller_Admin
 	public function action_create($id = null)
 	{
 	    $view = View::forge('admin/posts/create');
-	    
+
 	    if (Input::method() == 'POST')
 	    {
 	        $post = Model_Post::forge(array(
@@ -75,11 +75,11 @@ class Controller_Admin_Posts extends Controller_Admin
 	            'user_id' => $this->current_user->id,
 	            'created_at' => date("H:i:s"),
 	        ));
-	        
-	        if ($post and $post->save())
+	        if ($post->save())
 	        {
+	        	
 	            Session::set_flash('success', 'Added post #'.$post->id.'.');
-	            // Response::redirect('admin/posts');
+	            Response::redirect('admin/posts');
 	        }
 	        else
 	        {
@@ -87,10 +87,9 @@ class Controller_Admin_Posts extends Controller_Admin
 	        }
 
 	    }
-	    //Session::set_flash('success', 'Added post #'.Input::post('tags'));
+	    // Session::get_flash('success', 'Added post #.'.Input::post('tags'));
 	    // Set some data
 	    $view->set_global('users', Arr::assoc_to_keyval(Model_User::find('all'), 'id', 'username'));
-
 	    $this->template->title = "Create Post";
 	    $this->template->content = $$view = View::forge('admin/posts/create');
 	}

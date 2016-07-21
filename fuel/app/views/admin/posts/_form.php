@@ -8,7 +8,7 @@
 
 		</div>
 		<div class="form-group">
-			<?php echo Form::label('Tags', 'slug', array('class'=>'control-label')); ?>
+			<?php echo Form::label('Slug', 'slug', array('class'=>'control-label')); ?>
 
 				<?php echo Form::input('slug', Input::post('slug', isset($post) ? $post->slug : ''), array('class' => 'col-md-4 form-control', 'placeholder'=>'Slug')); ?>
 
@@ -28,11 +28,13 @@
 
 		<div class="form-group">
 			<label class='control-label'>&nbsp;</label>
+			
 			<div id="example1"></div>
 		</div>
 
 		<div class="form-group">
 			<label class='control-label'>&nbsp;</label>
-			<?php echo Form::submit('submit', 'Save', array('id'=>'submit', 'class' => 'btn btn-primary')); ?>		</div>
+			<?php echo Form::submit('submit', 'Save', array('id'=>'submit', 'class' => 'btn btn-primary')); ?>
+		</div>
  
 <?php echo Form::close(); ?>

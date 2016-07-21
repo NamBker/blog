@@ -17,12 +17,15 @@
   </head>
   <body>
 
-    <div class="blog-masthead">
+    <div class="blog-masthead" id="fixNav">
       <div class="container">
-        <nav class="blog-nav">
-          <a class="blog-nav-item" href="/">Home</a>
-          <a class="blog-nav-item" href="/blog/login">Login</a>
+        <nav class="blog-nav" >
+            <ul>
+               <li><a class="blog-nav-item" href="/">Home</a></li>
+              <li><a class="blog-nav-item" href="/blog/login">Login</a></li>
+            </ul>
 
+          
           <form class="navbar-form navbar-right" action="/tags/search/" method="GET">
                   <input type="text" class="form-control" placeholder="Search..." name="tags">
            </form>

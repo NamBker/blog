@@ -22,9 +22,9 @@
   <body>
 
 
-    <div class="blog-masthead">
+    <div class="blog-masthead" id="fixNav">
       <div class="container">
-        <nav class="blog-nav">
+        <nav class="blog-nav" >
           <a class="blog-nav-item" href="/">Home</a>
           <a class="blog-nav-item" href="/user/login">Login</a>
 

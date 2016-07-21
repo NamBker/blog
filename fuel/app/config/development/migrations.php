@@ -7,12 +7,9 @@ return array(
       'default' => 
       array(
         0 => '001_create_comments',
-        1 => '001_create_users',
-        2 => '002_create_posts',
-        3 => '003_create_comments',
-        4 => '004_create_tags',
-        5 => '005_create_users',
-        6 => '006_create_tags',
+        1 => '002_create_posts',
+        2 => '005_create_users',
+        3 => '006_create_tags',
       ),
     ),
     'module' => 

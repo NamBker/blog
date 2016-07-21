@@ -1,4 +1,4 @@
-<h2>Listing Comments</h2>
+<h3>Listing Comments</h3>
 <br>
 <?php if ($comments): ?>
 <table class="table table-striped">

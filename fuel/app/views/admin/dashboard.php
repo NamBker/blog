@@ -5,7 +5,7 @@
 foreach ($posts as $item) { 
   ?>
     <div class="blog-post">
-      <h2 class="blog-post-title"><?php echo $item->title ?></h2>
+      <h3 class="blog-post-title"><?php echo $item->title ?></h3>
       <p class="blog-post-meta"><?php echo date('nS F, Y', $item->created_at) ?></p>
 
       <p><?php echo Str::truncate($item->body,300); ?></p>
